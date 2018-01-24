@@ -80,7 +80,7 @@ def makejson(file):
     if (list_gone != []):
         gone = "".join(list(list_gone))
         output += "以下pod已不存在:\n"+gone
-    if  (list_af != []):
+    if  (list_af != []) and ((list_ok != []) or (list_gone != [])):
         af = "".join(list(list_af))
         output += "以下pod仍未恢复:\n"+af
     return output
