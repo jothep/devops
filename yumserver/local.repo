@@ -1,0 +1,6 @@
+[yumserver]
+name=local-repo
+enabled=1
+baseurl=http://10.0.14.245:8880/
+#baseurl=file:///mnt/data/
+gpgcheck=0

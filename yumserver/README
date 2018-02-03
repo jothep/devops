@@ -1,0 +1,8 @@
+docker command:
+docker run -v /mnt:/mnt -tid --name=yumserver -p 8880:80 jasko/yumserver bash
+
+yum stored:
+/mnt/data
+
+repo:
+local.repo
