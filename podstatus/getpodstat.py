@@ -19,7 +19,8 @@ def listtofile(list,file):
         pod = i.split('/')[1]
         lp = len(pod)
         if lp>17:
-            podname = pod[:-17]
+            #podname = pod[:-17]
+            podname = pod.rsplit('-', 2)[0]
         else:
             podname = pod
         full =str(ns+' '+podname+'\n')
@@ -46,7 +47,8 @@ def str_count(s):
     pod = line.split('/')[1]
     lp = len(pod)
     if  lp > 17:
-        podname = pod[:-17]
+        #podname = pod[:-17]
+        podname = pod.rsplit('-', 2)[0]
         print podname
     else:
         podname = pod
